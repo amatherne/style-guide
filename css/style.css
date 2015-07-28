@@ -1,0 +1,409 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,600|Oxygen);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body,
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  body p,
+  * p,
+  *:after p,
+  *:before p {
+    line-height: 1.5em; }
+
+.row div:last-child {
+  margin-right: 0; }
+
+.col2,
+.col3,
+.col4,
+.col5,
+.col6,
+.col7,
+.col8,
+.col9 {
+  width: 100%;
+  float: left; }
+
+.row {
+  width: 100%;
+  max-width: 1140px;
+  overflow: hidden; }
+
+.col2 {
+  width: 15.202%;
+  margin-right: 1.75%; }
+
+.col3 {
+  width: 23.678%;
+  margin-right: 1.75%; }
+
+.col4 {
+  width: 32.154%;
+  margin-right: 1.75%; }
+
+.col5 {
+  width: 40.63%;
+  margin-right: 1.75%; }
+
+.col6 {
+  width: 49.106%;
+  margin-right: 1.75%; }
+
+.col7 {
+  width: 57.582%;
+  margin-right: 1.75%; }
+
+.col8 {
+  width: 66.058%;
+  margin-right: 1.75%; }
+
+.col9 {
+  width: 74.534%;
+  margin-right: 1.75%; }
+
+/* ============================= gradient ====================*/
+.slicknav_btn {
+  color: white;
+  font-size: 1.25px;
+  font-size: 2em;
+  line-height: 2rem;
+  top: 1rem;
+  right: 1rem;
+  border: 2px solid #f4faf9;
+  position: absolute;
+  height: 40px;
+  width: 100px;
+  overflow: hidden;
+  background-color: #a6d8ce;
+  z-index: 10; }
+  .slicknav_btn span {
+    z-index: 1000;
+    position: absolute;
+    top: 0.4rem;
+    left: 1.8rem; }
+  .slicknav_btn .slicknav_icon-bar + .slicknav_icon-bar {
+    margin-top: 0.188em; }
+
+.slicknav_menu {
+  *zoom: 1; }
+  .slicknav_menu .slicknav_menutxt {
+    display: block;
+    line-height: 1.188em;
+    float: left; }
+  .slicknav_menu .slicknav_icon {
+    float: left;
+    margin: 0.188em 0 0 0.438em;
+    display: none; }
+  .slicknav_menu .slicknav_no-text {
+    margin: 0; }
+  .slicknav_menu .slicknav_icon-bar {
+    display: block;
+    width: 1.125em;
+    height: 0.125em;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px; }
+  .slicknav_menu:before {
+    content: " ";
+    display: table; }
+  .slicknav_menu:after {
+    content: " ";
+    display: table;
+    clear: both; }
+
+.slicknav_nav {
+  position: absolute;
+  top: 4.65rem;
+  clear: both;
+  width: 100%;
+  z-index: 100;
+  background: #f39f99; }
+  .slicknav_nav ul {
+    display: block; }
+  .slicknav_nav li {
+    display: block; }
+  .slicknav_nav .slicknav_arrow {
+    font-size: 0.8em;
+    margin: 0 0 0 0.4em; }
+  .slicknav_nav .slicknav_item {
+    cursor: pointer; }
+    .slicknav_nav .slicknav_item a {
+      display: inline; }
+  .slicknav_nav .slicknav_row {
+    display: block; }
+  .slicknav_nav a {
+    display: block;
+    padding-left: 4em;
+    color: white; }
+  .slicknav_nav .slicknav_parent-link a {
+    display: inline; }
+  .slicknav_nav .slicknav_parent {
+    margin-left: -1em; }
+    .slicknav_nav .slicknav_parent li {
+      padding-left: 4em; }
+  .slicknav_nav a {
+    display: block;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em; }
+
+.slicknav_brand {
+  float: left; }
+
+.slicknav_menu {
+  display: none; }
+
+@media screen and (max-width: 550px) {
+  .js #menu {
+    display: none;
+    top: 8.5em;
+    position: absolute;
+    width: 100%;
+    margin: 0; }
+
+  .slicknav_menu {
+    display: block; } }
+/* 
+ * overlay.css v1.0.0
+ * Copyright 2014 Joah Gerstenberg (www.joahg.com)
+ */
+.overlay {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -ms-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out; }
+
+.overlay .modal {
+  cursor: auto;
+  position: relative;
+  z-index: 110000;
+  margin: 4em 5%;
+  width: 90%;
+  padding: 2px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px; }
+  .overlay .modal img {
+    z-index: 120000;
+    display: block;
+    margin: 0;
+    opacity: 1; }
+  @media screen and (min-width: 1000px) {
+    .overlay .modal {
+      width: 85%;
+      margin: 1em 7.5%; } }
+  @media screen and (min-width: 1200px) {
+    .overlay .modal {
+      width: 70%;
+      margin: 0.5em 15%; } }
+
+.overlay span.modal {
+  display: block;
+  position: absolute;
+  color: white;
+  width: 80%;
+  margin: -4em 10% 0em 10%;
+  padding: 1em;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  font-size: 1.1em; }
+  @media screen and (min-width: 550px) {
+    .overlay span.modal {
+      width: 50%;
+      margin: -4em 25% 0em 25%; } }
+  @media screen and (min-width: 1000px) {
+    .overlay span.modal {
+      width: 50%;
+      margin: -1em 25% 0em 25%; } }
+
+.overlay.shown {
+  opacity: 1; }
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 0.39063px;
+  font-size: 0.625em;
+  line-height: 0.625rem;
+  line-height: 1.5rem; }
+
+a {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+  color: #9d4425;
+  font-size: 1px;
+  font-size: 1.6em;
+  line-height: 1.6rem; }
+
+a:hover {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600; }
+
+p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 1px;
+  font-size: 1.6em;
+  line-height: 1.6rem;
+  color: #2a6054;
+  margin-bottom: 1.5rem; }
+
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 2.5px;
+  font-size: 4em;
+  line-height: 4rem;
+  color: #2a6054;
+  margin-bottom: 2rem; }
+
+h3 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 2.5px;
+  font-size: 4em;
+  line-height: 4rem;
+  color: #2a6054; }
+
+img {
+  width: 80%;
+  margin: 1rem 10%; }
+
+header {
+  width: 100%;
+  background: #8accbe;
+  overflow: hidden; }
+
+.top {
+  width: 80%;
+  margin: 1rem 10%; }
+  .top li {
+    display: inline-block;
+    margin: 0.5rem 2%; }
+  .top a {
+    color: #f4faf9; }
+  .top .live-links {
+    width: 50%;
+    margin: 1rem 25%;
+    text-align: center; }
+
+.menu {
+  width: 100%;
+  margin: 0rem 0;
+  display: none; }
+  .menu li {
+    margin: 0.5rem 1%; }
+
+.show-width {
+  background: #18a390;
+  width: 100px;
+  height: 40px;
+  color: white;
+  font-size: 25px;
+  top: 1em;
+  left: 1em;
+  position: fixed;
+  z-index: 100000;
+  font-family: 'lato-light'; }
+  .show-width p {
+    text-align: center;
+    margin: 2px;
+    font-family: 'lato-light';
+    font-size: 0.6875px;
+    font-size: 1.1em;
+    line-height: 1.1rem;
+    color: white;
+    margin-top: 0.5rem; }
+
+.pagewrap {
+  width: 80%;
+  margin: 2rem 10%; }
+
+.container-image {
+  width: 80%;
+  margin: 2rem 10%; }
+  .container-image img:hover {
+    background: white;
+    box-shadow: 0.05rem 0.15rem 0.3rem 0.001rem #2a6054; }
+  .container-image figcaption {
+    width: 80%;
+    margin: 0rem 10%;
+    text-align: center;
+    font-size: 0.5625px;
+    font-size: 0.9em;
+    line-height: 0.9rem;
+    color: #2a6054; }
+    .container-image figcaption:hover {
+      box-shadow: rgba(255, 255, 255, 0);
+      font-family: 'Raleway', sans-serif;
+      font-weight: 300;
+      background: white; }
+
+@media screen and (min-width: 550px) {
+  .menu {
+    display: block; } }
+
+/*# sourceMappingURL=style.css.map */

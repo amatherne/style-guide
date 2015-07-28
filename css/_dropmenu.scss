@@ -1,0 +1,134 @@
+.slicknav_btn {
+    color: lighten($maincolor,50%);
+    @include font(2);
+    top: 1rem;
+    right: 1rem;
+    // float: right;
+    border: 2px solid lighten($maincolor,30%);
+    position: absolute;
+    height: 40px;
+    width: 100px;
+    overflow: hidden;
+    background-color: lighten($maincolor,8%);
+    z-index: 10;
+    span {
+        z-index: 1000;
+        position: absolute;
+        top: 0.4rem;
+        left: 1.8rem;
+    }
+    .slicknav_icon-bar + .slicknav_icon-bar {
+        margin-top: 0.188em;
+    }
+}
+
+.slicknav_menu {
+    *zoom: 1;
+    // z-index: -100000;
+    .slicknav_menutxt {
+        display: block;
+        line-height: 1.188em;
+        float: left;
+    }
+    .slicknav_icon {
+        float: left;
+        margin: 0.188em 0 0 0.438em;
+        display: none;
+    }
+    .slicknav_no-text {
+        margin: 0;
+    }
+    .slicknav_icon-bar {
+        display: block;
+        width: 1.125em;
+        height: 0.125em;
+        -webkit-border-radius: 1px;
+        -moz-border-radius: 1px;
+        border-radius: 1px;
+    }
+    &:before {
+        content: " ";
+        display: table;
+    }
+    &:after {
+        content: " ";
+        display: table;
+        clear: both;
+    }
+}
+
+.slicknav_nav {
+    position: absolute;
+    top: 4.65rem;
+    clear: both;
+    width: 100%;
+    z-index: 100;
+    ul {
+        display: block;
+    }
+    li {
+        display: block;
+    }
+    .slicknav_arrow {
+        font-size: 0.8em;
+        margin: 0 0 0 0.4em;
+    }
+    .slicknav_item {
+        cursor: pointer;
+        a {
+            display: inline;
+        }
+    }
+    .slicknav_row {
+        display: block;
+    }
+    a {
+        display: block;
+        padding-left: 4em;
+        color:lighten($maincolor,50%);
+    }
+    .slicknav_parent-link a {
+        display: inline;
+    }
+    .slicknav_parent {
+        margin-left: -1em;
+        li {
+            padding-left: 4em;
+        }
+    }
+    background: $highlight;
+    a {
+        display: block;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        padding-left: 1em;
+
+    }
+}
+
+.slicknav_brand {
+    float: left;
+}
+
+.slicknav_item.slicknav_row:hover a {
+//     color: $stripe2;
+}
+
+
+.slicknav_menu {
+  display:none;
+}
+@media screen and (max-width: 550px) {
+  .js #menu {
+    display:none;
+    top: 8.5em;
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    }
+  
+  
+  .slicknav_menu {
+    display:block;
+  }
+}

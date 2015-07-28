@@ -1,0 +1,138 @@
+body {
+	@include ralereg;
+	@include font(0.625);
+	line-height:1.5rem;
+}
+
+a {
+	@include ralelight;
+	text-decoration:none;
+	color:darken($linkcolor,10%);
+	@include font(1.6);
+}
+a:hover {
+	// color: darken($linkcolor,20%);
+	@include ralebold;
+	// @include font(1.545);
+}
+p {
+	@include ralereg;
+	@include font(1.6);
+	color:darken($maincolor,40%);
+	margin-bottom:1.5rem;
+}
+h2 {
+	@include ralebold;
+	@include font(4);
+	color:darken($maincolor,40%);
+	margin-bottom:2rem;
+
+}
+h3 {
+	@include ralebold;
+	@include font(4);
+	color:darken($maincolor,40%);
+}
+h4 {
+
+}
+img {
+	width:80%;
+	margin:1rem 10%;
+}
+header {
+	width:100%;
+	background: $maincolor;
+	overflow: hidden;
+}
+
+.top {
+	width:80%;
+	margin:1rem 10%;
+	li {
+		display: inline-block;
+		margin:0.5rem 2%;
+
+	}
+	a {
+		color: lighten($maincolor,30%);
+	}
+	.live-links {
+		width: 50%;
+		margin:1rem 25%;
+		text-align: center;
+	}
+}
+.menu {
+		width: 100%;
+		margin: 0rem 0;
+		display: none;
+		
+		li {
+			margin: 0.5rem 1%;
+		} 
+	}
+
+.show-width {
+  background:#18a390;
+  width:100px;
+  height:40px;
+  color:white;
+  font-size:25px;
+  top:1em;
+  left:1em;
+  position:fixed;
+  z-index: 100000;
+  font-family:'lato-light';
+  p {
+    text-align:center;
+    margin:2px;
+    font-family: 'lato-light';
+	@include font(1.1);
+	color:lighten($maincolor,50%);
+	margin-top:0.5rem;
+}
+
+}
+.pagewrap {
+	width:80%;
+	margin:2rem 10%;
+}
+
+.container-image {
+	width:80%;
+	margin:2rem 10%;
+	img:hover {
+		background:lighten($maincolor,40%);
+		box-shadow: 0.05rem 0.15rem 0.3rem 0.001rem darken($maincolor,40%);
+	}
+	figcaption {
+		width: 80%;
+		margin: 0rem 10%;
+		text-align: center;
+		@include font(0.9);
+		color:darken($maincolor,40%);
+		&:hover {
+			box-shadow:rgba(255,255,255,0);
+			@include ralelight;
+			background: white;
+		}
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
