@@ -3,6 +3,7 @@
    License: none (public domain)
 */
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,300,600|Oxygen);
+@import url(http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300,700|Cabin+Sketch:700|Marck+Script);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -383,8 +384,10 @@ header {
   margin: 2rem 10%; }
 
 .container-image {
-  width: 80%;
-  margin: 2rem 10%; }
+  width: 30%;
+  margin: 2rem 1.2%;
+  display: inline-block;
+  vertical-align: top; }
   .container-image img:hover {
     background: white;
     box-shadow: 0.05rem 0.15rem 0.3rem 0.001rem #2a6054; }
@@ -392,18 +395,281 @@ header {
     width: 80%;
     margin: 0rem 10%;
     text-align: center;
-    font-size: 0.5625px;
-    font-size: 0.9em;
-    line-height: 0.9rem;
+    font-size: 0.5px;
+    font-size: 0.8em;
+    line-height: 0.8rem;
     color: #2a6054; }
-    .container-image figcaption:hover {
-      box-shadow: rgba(255, 255, 255, 0);
-      font-family: 'Raleway', sans-serif;
-      font-weight: 300;
-      background: white; }
 
-@media screen and (min-width: 550px) {
+.typo {
+  clear: both;
+  width: 80%;
+  margin: 1.9em 10%; }
+  .typo span {
+    font-size: 0.8125px;
+    font-size: 1.3em;
+    line-height: 1.3rem; }
+
+.ex-head {
+  clear: both;
+  font-size: 70px;
+  display: block;
+  text-align: center;
+  width: 250px;
+  margin: 0.3em 0% 0.5em 5%;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  line-height: 1em;
+  color: #4F1E16;
+  background: rgba(206, 181, 160, 0.5);
+  padding: 0.3em; }
+
+.typo a:hover {
+  color: #E9D0C7;
+  font-family: 'Alegreya Sans SC', sans-serif; }
+
+.special {
+  font-family: 'Marck Script', cursive;
+  font-size: 78px; }
+
+.ex-content {
+  font-size: 15px;
+  display: block;
+  width: 100%;
+  margin: 2em 0% 0.5em 0%;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  color: #4f1f15;
+  background: rgba(206, 181, 160, 0.5);
+  padding: 1em; }
+
+.ex-link {
+  font-size: 15px;
+  display: block;
+  width: 100%;
+  margin: 2em 0% 0.5em 0%;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  color: #4f1f15;
+  background: rgba(206, 181, 160, 0.5);
+  padding: 1em; }
+
+.ex-link a {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  text-transform: none;
+  text-decoration: underline;
+  color: #4F1E16;
+  font-weight: 700;
+  font-size: 15px; }
+
+.ex-button {
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  display: block;
+  padding: 0.5em;
+  width: 80px;
+  margin: 2em 50% 0.5em 0%;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  color: #4f1f15;
+  border: 1px #E9D0C7 solid;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4f1f15+0,ceb59d+100 */
+  background: #4f1f15;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #4f1f15 0%, #ceb59d 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4f1f15), color-stop(100%, #ceb59d));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #4f1f15 0%, #ceb59d 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #4f1f15 0%, #ceb59d 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #4f1f15 0%, #ceb59d 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #4f1f15 0%, #ceb59d 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f1f15', endColorstr='#ceb59d',GradientType=0 );
+  /* IE6-9 */ }
+
+.ex-button a {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  text-transform: none;
+  color: #4F1E16;
+  font-weight: 700;
+  font-size: 16px; }
+
+.ex-huge {
+  font-family: 'Cabin Sketch', cursive;
+  font-weight: 700;
+  text-align: center;
+  color: #261305;
+  margin: 3em 0%;
+  background: rgba(139, 103, 78, 0.5);
+  border-radius: 50%;
+  /*overflow: hidden;*/
+  display: block;
+  width: 300px;
+  height: 300px;
+  padding: 4em; }
+
+span .medium {
+  font-size: 61px;
+  margin: -0.3em; }
+span .large {
+  font-size: 191px;
+  line-height: 0.8em; }
+
+.font-name {
+  font-size: 0.75em;
+  display: block;
+  font-family: Monaco, Andale Mono, Courier New, monospace;
+  color: #666;
+  width: 80%;
+  margin: 0.3em 10%; }
+
+.clarity {
+  margin-left: 3em;
+  font-size: 18px;
+  font-family: Monaco, Andale Mono, Courier New, monospace;
+  color: #ee7961; }
+
+.color-bubble {
+  width: 70%;
+  margin: 0.5em 15%;
+  /*position: relative;*/
+  float: left;
+  clear: left; }
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  margin-right: -1.5em;
+  position: relative;
+  /*  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    -moz-box-shadow:    3px 3px 5px 6px #ccc;*/
+  box-shadow: 0.7px 0.7px 0.5px 1px rgba(0, 0, 0, 0.5); }
+
+.text {
+  position: absolute;
+  top: 1em;
+  left: 7em;
+  font-size: 1px;
+  font-size: 1.6em;
+  line-height: 1.6rem;
+  font-family: Monaco, Andale Mono, Courier New, monospace;
+  color: #ee7961; }
+
+.color-one {
+  background: #4f1f15;
+  z-index: 1; }
+
+.color-two {
+  background: #e9d0c6;
+  z-index: 2;
+  margin-top: 3em; }
+
+.color-three {
+  background: #ceb59d;
+  z-index: 3;
+  margin-top: 3em; }
+
+.color-four {
+  background: #ae866b;
+  z-index: 4;
+  margin-top: 3em; }
+
+.color-five {
+  background: white;
+  z-index: 5;
+  margin-top: 3em;
+  margin-bottom: 4em; }
+
+@media screen and (min-width: 800px) {
   .menu {
-    display: block; } }
+    display: block; }
+
+  .container-image {
+    width: 30%;
+    margin: 2rem 1.2%;
+    display: inline-block;
+    vertical-align: top; }
+    .container-image img:hover {
+      background: white;
+      box-shadow: 0.05rem 0.15rem 0.3rem 0.001rem #2a6054; }
+    .container-image figcaption {
+      width: 80%;
+      margin: 0rem 10%;
+      text-align: center;
+      font-size: 0.5px;
+      font-size: 0.8em;
+      line-height: 0.8rem;
+      color: #2a6054; }
+
+  .circle {
+    float: left; }
+
+  .color-one {
+    background: #4f1f15;
+    z-index: 1;
+    position: relative; }
+
+  .color-two {
+    background: #e9d0c6;
+    z-index: 2;
+    margin-top: 4em; }
+
+  .color-three {
+    background: #ceb59d;
+    z-index: 3;
+    margin-top: 8em; }
+
+  .color-four {
+    background: #ae866b;
+    z-index: 4;
+    margin-top: 12em; }
+
+  .color-five {
+    background: white;
+    z-index: 5;
+    margin-top: 16em;
+    margin-bottom: 4em; }
+
+  .font-name {
+    display: inline-block;
+    width: 40%;
+    margin: 0.3em 0% 0em 5%;
+    vertical-align: top; }
+
+  .ex-head {
+    display: inline-block;
+    margin: 0em 0% 1em 5%; }
+
+  .ex-content {
+    display: inline-block;
+    clear: both;
+    width: 250px;
+    margin: 0em 0% 6em 5%; }
+
+  .ex-link {
+    display: inline-block;
+    clear: both;
+    width: 250px;
+    margin: 0em 0% 10em 5%; }
+
+  .ex-button {
+    display: inline-block;
+    clear: both;
+    margin: 0em 170px 15em 5%; }
+
+  .ex-huge {
+    width: 250px;
+    height: 250px;
+    padding: 3em;
+    margin: 0em 0% 1em 5%;
+    display: inline-block; }
+
+  span .medium {
+    font-size: 48.8px;
+    margin: -0.3em; }
+  span .large {
+    font-size: 152.8px;
+    line-height: 0.8em; } }
 
 /*# sourceMappingURL=style.css.map */

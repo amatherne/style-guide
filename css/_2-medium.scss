@@ -1,0 +1,117 @@
+@media screen and (min-width:800px) {
+	.menu {
+		display: block;
+		
+	}
+
+	.container-image {
+		width:30%;
+		margin:2rem 1.2%;
+		display: inline-block;
+		vertical-align: top;
+		img:hover {
+			background:lighten($maincolor,40%);
+			box-shadow: 0.05rem 0.15rem 0.3rem 0.001rem darken($maincolor,40%);
+		}
+		figcaption {
+			width: 80%;
+			margin: 0rem 10%;
+			text-align: center;
+			@include font(0.8);
+			color:darken($maincolor,40%);
+		}
+	}
+
+
+
+
+
+
+	.circle {
+		float:left;
+	}
+	.color-one {
+	    background: rgba(79,31,21,1);
+	    z-index: 1;
+	    position: relative;
+	}
+	.color-two {
+	    background: rgb(233,208,198);
+	    z-index: 2;
+	    margin-top: 4em;
+	}
+	.color-three {
+	    background: rgb(206,181,157);
+	    z-index: 3;
+	    margin-top: 8em;
+	}
+	.color-four {
+	    background: rgb(174,134,107);
+	    z-index: 4;
+	    margin-top: 12em;
+	}
+	.color-five {
+	    background: white;
+	    z-index: 5;
+	    margin-top: 16em;
+	    margin-bottom: 4em;
+	}
+
+	.font-name {
+		display: inline-block;
+		width: 40%;
+		margin: 0.3em 0% 0em 5%;
+		vertical-align: top;
+	}
+	.ex-head {
+		display: inline-block;
+		margin:0em 0% 1em 5%;
+	}
+	.ex-content {
+		display: inline-block;
+		clear: both;
+		width: 250px;
+		margin:0em 0% 6em 5%;
+	}
+	.ex-link {
+		display: inline-block;
+		clear: both;
+		width: 250px;
+		margin:0em 0% 10em 5%;
+	}
+	.ex-button {
+		display: inline-block;
+		clear: both;
+		// width: 250px;
+		margin:0em 170px 15em 5%;
+	}
+	.ex-huge {
+		width:250px;
+		height:250px;
+		padding: 3em;
+		margin:0em 0% 1em 5%;
+		display: inline-block;
+	}
+	span {
+		.medium {
+		    font-size: 48.8px;
+		    margin:-0.3em;
+		}
+		.large {
+		    font-size:152.8px;
+		    line-height: 0.8em;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
