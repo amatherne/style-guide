@@ -30,16 +30,20 @@
   position: relative;
   z-index: 110000;
   margin: 4em 5%;
-  width: 90%;
+  // width: 90%;
+  // height: 90%;
   padding: 2px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
+
   img {
     z-index: 120000;
     display: block;
     margin:0;
     opacity: 1;
+    
+
   }
   @media screen and (min-width:1000px){
     width: 85%;
@@ -55,6 +59,8 @@
 
     display: block;
     position: absolute;
+  // overflow-y: scroll;
+    
     color: white;
     width: 80%;
     margin:-4em 10% 0em 10%;
@@ -76,3 +82,4 @@
 .overlay.shown {
   opacity: 1;
 }
+

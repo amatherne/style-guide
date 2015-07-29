@@ -203,7 +203,7 @@ body,
 .slicknav_menu {
   display: none; }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 800px) {
   .js #menu {
     display: none;
     top: 8.5em;
@@ -241,7 +241,6 @@ body,
   position: relative;
   z-index: 110000;
   margin: 4em 5%;
-  width: 90%;
   padding: 2px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -392,6 +391,23 @@ header {
     background: white;
     box-shadow: 0.05rem 0.15rem 0.3rem 0.001rem #2a6054; }
   .container-image figcaption {
+    width: 80%;
+    margin: 0rem 10%;
+    text-align: center;
+    font-size: 0.5px;
+    font-size: 0.8em;
+    line-height: 0.8rem;
+    color: #2a6054; }
+
+.container-image-2 {
+  width: 47%;
+  margin: 2rem 1.2%;
+  display: inline-block;
+  vertical-align: top; }
+  .container-image-2 img:hover {
+    background: white;
+    box-shadow: 0.05rem 0.15rem 0.3rem 0.001rem #2a6054; }
+  .container-image-2 figcaption {
     width: 80%;
     margin: 0rem 10%;
     text-align: center;

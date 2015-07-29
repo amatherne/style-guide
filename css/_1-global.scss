@@ -116,6 +116,23 @@ header {
 		color:darken($maincolor,40%);
 	}
 }
+.container-image-2 {
+	width:47%;
+		margin:2rem 1.2%;
+		display: inline-block;
+		vertical-align: top;
+	img:hover {
+		background:lighten($maincolor,40%);
+		box-shadow: 0.05rem 0.15rem 0.3rem 0.001rem darken($maincolor,40%);
+	}
+	figcaption {
+		width: 80%;
+		margin: 0rem 10%;
+		text-align: center;
+		@include font(0.8);
+		color:darken($maincolor,40%);
+	}
+}
 
 @import url(http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300,700|Cabin+Sketch:700|Marck+Script);
 

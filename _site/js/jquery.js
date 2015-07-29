@@ -1,6 +1,6 @@
-$(window).resize(function() {
-  $('.show-width').html('<p>' + $(window).width() + 'px' + '</p>');
-});
+// $(window).resize(function() {
+//   $('.show-width').html('<p>' + $(window).width() + 'px' + '</p>');
+// });
 
 /*!
  * SlickNav Responsive Mobile Menu v1.0.4
@@ -507,6 +507,7 @@ $(window).resize(function() {
       $('a[data-overlay-trigger=""]').on('click', function() {
         overlay.trigger('show');
       });
+      
 
       $('a[data-overlay-trigger]:not([data-overlay-trigger=""])').on('click', function() {
         console.log($('.overlay#' + $(this).attr('data-overlay-trigger')))
